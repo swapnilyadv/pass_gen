@@ -1,4 +1,7 @@
-# Luxury Password Generator
+# Password Generator
+
+![image](https://github.com/user-attachments/assets/26cb3609-04ab-4cdc-a84b-e5cae19985e8)
+
 
 This project is a luxury UI web application that allows users to generate random passwords based on their preferences. The application is built using React and Vite, providing a fast and modern development experience.
 
