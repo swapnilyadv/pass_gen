@@ -1,0 +1,31 @@
+{
+  "name": "luxury-password-generator",
+  "version": "1.0.0",
+  "description": "A luxury UI website for generating random passwords based on user preferences.",
+  "main": "src/main.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.1",
+    "vite": "^4.0.0"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "luxury",
+    "ui",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
