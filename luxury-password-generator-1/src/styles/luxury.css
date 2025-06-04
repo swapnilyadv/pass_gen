@@ -1,7 +1,10 @@
 /* luxury.css */
 body {
-  background: linear-gradient(135deg, #232526 0%, #414345 100%);
-  font-family: 'Montserrat', 'Inter', sans-serif;
+  background: 
+    linear-gradient(120deg, rgba(17,17,17,0.92) 60%, rgba(212,175,55,0.08)),
+    url('https://source.unsplash.com/1600x900/?luxury,fashion,gucci,zara') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Playfair Display', serif;
   color: #fff;
   min-height: 100vh;
   margin: 0;
@@ -9,47 +12,118 @@ body {
 
 .luxury-container {
   max-width: 420px;
-  margin: 60px auto;
-  background: rgba(30, 30, 30, 0.85);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border: 1px solid rgba(255, 215, 0, 0.2);
-  padding: 40px 32px;
+  margin: 80px auto 0 auto;
+  background: #181818;
+  border-radius: 18px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 8px 32px 0 rgba(212, 175, 55, 0.12);
+  padding: 48px 36px 36px 36px;
   text-align: center;
 }
 
 .luxury-title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: 'Playfair Display', serif;
-  color: #ffd700;
-  margin-bottom: 24px;
-  letter-spacing: 2px;
+  color: #fff;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  margin-bottom: 36px;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 8px;
 }
 
 .luxury-password {
-  font-size: 1.5rem;
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  padding: 16px;
-  margin: 24px 0;
+  font-size: 1.4rem;
+  background: #111;
+  border-radius: 10px;
+  padding: 18px 12px;
+  margin: 32px 0 16px 0;
   letter-spacing: 2px;
-  border: 1px solid #ffd700;
-  color: #ffd700;
+  border: 1.5px solid #d4af37;
+  color: #d4af37;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-weight: 600;
+  min-height: 32px;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .luxury-btn {
-  background: linear-gradient(90deg, #ffd700 0%, #fffbe0 100%);
-  color: #232526;
-  border: none;
+  background: #111;
+  color: #d4af37;
+  border: 2px solid #d4af37;
   border-radius: 8px;
   padding: 12px 32px;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: 
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.08);
+  margin: 0 4px;
 }
+
 .luxury-btn:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 4px 16px rgba(255, 215, 0, 0.3);
+  background: #d4af37;
+  color: #111;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 24px rgba(212, 175, 55, 0.18);
+}
+
+input[type="number"] {
+  background: #181818;
+  color: #d4af37;
+  border: 1.5px solid #d4af37;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  margin-left: 8px;
+  width: 60px;
+}
+
+input[type="checkbox"] {
+  accent-color: #d4af37;
+  margin-right: 4px;
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 12px;
+}
+
+.options-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .luxury-container {
+    padding: 24px 8px;
+  }
+  .luxury-title {
+    font-size: 2rem;
+  }
+  .options-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px 0;
+  }
+  label {
+    width: 100%;
+    margin-right: 0;
+  }
 }
