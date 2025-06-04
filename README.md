@@ -14,7 +14,7 @@ This project is a luxury UI web application that allows users to generate random
 ## Project Structure
 
 ```
-luxury-password-generator
+password-generator
 ├── src
 │   ├── assets               # Static assets (images/icons)
 │   ├── components           # React components
